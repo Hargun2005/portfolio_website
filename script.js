@@ -5,7 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const workBtn = document.getElementById("work-btn");
   const educationSection = document.getElementById("education-section");
   const workSection = document.getElementById("work-section");
+  const menuIcon = document.getElementById("menu-icon");
+  const navbar = document.querySelector(".navbar");
 
+  // Toggle navigation menu on small screens
+  menuIcon.addEventListener("click", function () {
+    navbar.classList.toggle("active");
+  });
+
+  // Filter project cards based on tags
   navbarLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
       event.preventDefault();
@@ -27,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Toggle between Education and Work sections
   educationBtn.addEventListener("click", function () {
     educationSection.classList.remove("hidden");
     workSection.classList.add("hidden");
