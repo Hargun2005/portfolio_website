@@ -124,7 +124,7 @@ section {
 
 .home-img img {
   width: 30vw;
-  border-radius: 50%;
+  border-radius: 10%;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
 }
@@ -873,4 +873,6 @@ footer {
   .project-card {
     padding: 2rem 1rem;
   }
+  /* TESTING of model */
+  /* Move this outside the media query and place it in the main CSS section */
 }
